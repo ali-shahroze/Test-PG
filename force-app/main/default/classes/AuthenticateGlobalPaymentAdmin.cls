@@ -17,6 +17,7 @@ public with sharing class AuthenticateGlobalPaymentAdmin {
     public static GlobalPayAdminWrapper authenticateGlobalPaymentAdminAPI(String globalPaymentMerchantName, String globalPaymentAppId, String globalPaymentAppKey) {
         // Generate a random nonce
         String nonce = generateRandomNonce();
+        //This is test
 
         // Create a SHA-512 hash of nonce + app key to generate the secret
         String secret = generateSHA512Hash(nonce, globalPaymentAppKey);
